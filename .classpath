@@ -2,5 +2,17 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="lib" path="E:/nosql/Ast/org.eclipse.jdt.astview/lib/org.eclipse.jdt.core_3.10.0.v20140902-0626.jar"/>
+	<classpathentry kind="lib" path="E:/nosql/Ast/org.eclipse.jdt.astview/lib/org.eclipse.jdt.core_3.10.2.v20150120-1634.jar"/>
+	<classpathentry kind="lib" path="E:/nosql/Ast/org.eclipse.jdt.astview/lib/org.eclipse.jdt.ui_3.10.1.v20140817-1500.jar"/>
+	<classpathentry kind="lib" path="E:/nosql/Ast/org.eclipse.jdt.astview/lib/org.eclipse.jdt.ui_3.10.2.v20141014-1419.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse/plugins/org.eclipse.core.contenttype_3.4.200.v20140207-1251.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse/plugins/org.eclipse.core.jobs_3.6.1.v20141014-1248.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse/plugins/org.eclipse.core.resources_3.9.1.v20140825-1431.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse/plugins/org.eclipse.equinox.common_3.6.200.v20130402-1505.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse/plugins/org.eclipse.equinox.preferences_3.5.200.v20140224-1527.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse/plugins/org.eclipse.jdt.core_3.10.2.v20150120-1634.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse/plugins/org.eclipse.osgi_3.10.2.v20150203-1939.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse/plugins/org.eclipse.core.runtime_3.10.0.v20140318-2214.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

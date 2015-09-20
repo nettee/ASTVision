@@ -1,0 +1,272 @@
+PACKAGE
+ PackageDeclaration
+  JAVADOC: null
+  ANNOTATIONS (0)
+  NAME
+   SimpleName
+    IDENTIFIER: 'testcase'
+IMPORTS (0)
+TYPES (1)
+ TypeDeclaration
+  JAVADOC: null
+  MODIFIERS (1)
+   Modifier
+    KEYWORD: 'public'
+  INTERFACE: 'false'
+  NAME
+   SimpleName
+    IDENTIFIER: 'IfElse'
+  TYPE_PARAMETERS (0)
+  SUPERCLASS_TYPE: null
+  SUPER_INTERFACE_TYPES (0)
+  BODY_DECLARATIONS (1)
+   MethodDeclaration
+    JAVADOC: null
+    MODIFIERS (2)
+     Modifier
+      KEYWORD: 'public'
+      Modifier
+       KEYWORD: 'static'
+    CONSTRUCTOR: 'false'
+    TYPE_PARAMETERS (0)
+    RETURN_TYPE2
+     PrimitiveType
+      PRIMITIVE_TYPE_CODE: 'void'
+    NAME
+     SimpleName
+      IDENTIFIER: 'main'
+    PARAMETERS (1)
+     SingleVariableDeclaration
+      MODIFIERS (0)
+      TYPE
+       ArrayType
+        COMPONENT_TYPE
+         SimpleType
+          NAME
+           SimpleName
+            IDENTIFIER: 'String'
+      VARARGS: 'false'
+      NAME
+       SimpleName
+        IDENTIFIER: 'args'
+      EXTRA_DIMENSIONS: '0'
+      INITIALIZER: null
+    EXTRA_DIMENSIONS: '0'
+    THROWN_EXCEPTIONS (0)
+    BODY
+     Block
+      STATEMENTS (6)
+       VariableDeclarationStatement
+        MODIFIERS (0)
+        TYPE
+         PrimitiveType
+          PRIMITIVE_TYPE_CODE: 'int'
+        FRAGMENTS (1)
+         VariableDeclarationFragment
+          NAME
+           SimpleName
+            IDENTIFIER: 'a'
+          EXTRA_DIMENSIONS: '0'
+          INITIALIZER
+           NumberLiteral
+            TOKEN: '1'
+        IfStatement
+         EXPRESSION
+          InfixExpression
+           LEFT_OPERAND
+            SimpleName
+             IDENTIFIER: 'a'
+           OPERATOR: '>'
+           RIGHT_OPERAND
+            NumberLiteral
+             TOKEN: '0'
+           EXTENDED_OPERANDS (0)
+         THEN_STATEMENT
+          Block
+           STATEMENTS (1)
+            ExpressionStatement
+             EXPRESSION
+              MethodInvocation
+               EXPRESSION
+                QualifiedName
+                 QUALIFIER
+                  SimpleName
+                   IDENTIFIER: 'System'
+                 NAME
+                  SimpleName
+                   IDENTIFIER: 'out'
+               TYPE_ARGUMENTS (0)
+               NAME
+                SimpleName
+                 IDENTIFIER: 'println'
+               ARGUMENTS (1)
+                StringLiteral
+                 ESCAPED_VALUE: '"a > 0"'
+         ELSE_STATEMENT: null
+         VariableDeclarationStatement
+          MODIFIERS (0)
+          TYPE
+           PrimitiveType
+            PRIMITIVE_TYPE_CODE: 'int'
+          FRAGMENTS (1)
+           VariableDeclarationFragment
+            NAME
+             SimpleName
+              IDENTIFIER: 'b'
+            EXTRA_DIMENSIONS: '0'
+            INITIALIZER
+             NumberLiteral
+              TOKEN: '1'
+          IfStatement
+           EXPRESSION
+            InfixExpression
+             LEFT_OPERAND
+              SimpleName
+               IDENTIFIER: 'b'
+             OPERATOR: '>'
+             RIGHT_OPERAND
+              NumberLiteral
+               TOKEN: '0'
+             EXTENDED_OPERANDS (0)
+           THEN_STATEMENT
+            Block
+             STATEMENTS (1)
+              ExpressionStatement
+               EXPRESSION
+                MethodInvocation
+                 EXPRESSION
+                  QualifiedName
+                   QUALIFIER
+                    SimpleName
+                     IDENTIFIER: 'System'
+                   NAME
+                    SimpleName
+                     IDENTIFIER: 'out'
+                 TYPE_ARGUMENTS (0)
+                 NAME
+                  SimpleName
+                   IDENTIFIER: 'println'
+                 ARGUMENTS (1)
+                  StringLiteral
+                   ESCAPED_VALUE: '"b > 0"'
+           ELSE_STATEMENT
+            Block
+             STATEMENTS (1)
+              ExpressionStatement
+               EXPRESSION
+                MethodInvocation
+                 EXPRESSION
+                  QualifiedName
+                   QUALIFIER
+                    SimpleName
+                     IDENTIFIER: 'System'
+                   NAME
+                    SimpleName
+                     IDENTIFIER: 'out'
+                 TYPE_ARGUMENTS (0)
+                 NAME
+                  SimpleName
+                   IDENTIFIER: 'println'
+                 ARGUMENTS (1)
+                  StringLiteral
+                   ESCAPED_VALUE: '"b <= 0"'
+           VariableDeclarationStatement
+            MODIFIERS (0)
+            TYPE
+             PrimitiveType
+              PRIMITIVE_TYPE_CODE: 'int'
+            FRAGMENTS (1)
+             VariableDeclarationFragment
+              NAME
+               SimpleName
+                IDENTIFIER: 'c'
+              EXTRA_DIMENSIONS: '0'
+              INITIALIZER
+               NumberLiteral
+                TOKEN: '1'
+            IfStatement
+             EXPRESSION
+              InfixExpression
+               LEFT_OPERAND
+                SimpleName
+                 IDENTIFIER: 'c'
+               OPERATOR: '>'
+               RIGHT_OPERAND
+                NumberLiteral
+                 TOKEN: '0'
+               EXTENDED_OPERANDS (0)
+             THEN_STATEMENT
+              Block
+               STATEMENTS (1)
+                ExpressionStatement
+                 EXPRESSION
+                  MethodInvocation
+                   EXPRESSION
+                    QualifiedName
+                     QUALIFIER
+                      SimpleName
+                       IDENTIFIER: 'System'
+                     NAME
+                      SimpleName
+                       IDENTIFIER: 'out'
+                   TYPE_ARGUMENTS (0)
+                   NAME
+                    SimpleName
+                     IDENTIFIER: 'println'
+                   ARGUMENTS (1)
+                    StringLiteral
+                     ESCAPED_VALUE: '"c > 0"'
+             ELSE_STATEMENT
+              IfStatement
+               EXPRESSION
+                InfixExpression
+                 LEFT_OPERAND
+                  SimpleName
+                   IDENTIFIER: 'c'
+                 OPERATOR: '<'
+                 RIGHT_OPERAND
+                  NumberLiteral
+                   TOKEN: '0'
+                 EXTENDED_OPERANDS (0)
+               THEN_STATEMENT
+                Block
+                 STATEMENTS (1)
+                  ExpressionStatement
+                   EXPRESSION
+                    MethodInvocation
+                     EXPRESSION
+                      QualifiedName
+                       QUALIFIER
+                        SimpleName
+                         IDENTIFIER: 'System'
+                       NAME
+                        SimpleName
+                         IDENTIFIER: 'out'
+                     TYPE_ARGUMENTS (0)
+                     NAME
+                      SimpleName
+                       IDENTIFIER: 'println'
+                     ARGUMENTS (1)
+                      StringLiteral
+                       ESCAPED_VALUE: '"c < 0"'
+               ELSE_STATEMENT
+                Block
+                 STATEMENTS (1)
+                  ExpressionStatement
+                   EXPRESSION
+                    MethodInvocation
+                     EXPRESSION
+                      QualifiedName
+                       QUALIFIER
+                        SimpleName
+                         IDENTIFIER: 'System'
+                       NAME
+                        SimpleName
+                         IDENTIFIER: 'out'
+                     TYPE_ARGUMENTS (0)
+                     NAME
+                      SimpleName
+                       IDENTIFIER: 'println'
+                     ARGUMENTS (1)
+                      StringLiteral
+                       ESCAPED_VALUE: '"c == 0"'

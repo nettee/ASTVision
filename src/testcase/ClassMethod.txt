@@ -1,0 +1,420 @@
+PACKAGE
+ PackageDeclaration
+  JAVADOC: null
+  ANNOTATIONS (0)
+  NAME
+   SimpleName
+    IDENTIFIER: 'testcase'
+IMPORTS (0)
+TYPES (1)
+ TypeDeclaration
+  JAVADOC: null
+  MODIFIERS (1)
+   Modifier
+    KEYWORD: 'public'
+  INTERFACE: 'false'
+  NAME
+   SimpleName
+    IDENTIFIER: 'ClassMethod'
+  TYPE_PARAMETERS (0)
+  SUPERCLASS_TYPE: null
+  SUPER_INTERFACE_TYPES (0)
+  BODY_DECLARATIONS (11)
+   FieldDeclaration
+    JAVADOC: null
+    MODIFIERS (1)
+     Modifier
+      KEYWORD: 'private'
+    TYPE
+     SimpleType
+      NAME
+       SimpleName
+        IDENTIFIER: 'String'
+    FRAGMENTS (1)
+     VariableDeclarationFragment
+      NAME
+       SimpleName
+        IDENTIFIER: 'name'
+      EXTRA_DIMENSIONS: '0'
+      INITIALIZER: null
+    FieldDeclaration
+     JAVADOC: null
+     MODIFIERS (1)
+      Modifier
+       KEYWORD: 'private'
+     TYPE
+      PrimitiveType
+       PRIMITIVE_TYPE_CODE: 'int'
+     FRAGMENTS (1)
+      VariableDeclarationFragment
+       NAME
+        SimpleName
+         IDENTIFIER: 'color'
+       EXTRA_DIMENSIONS: '0'
+       INITIALIZER: null
+     FieldDeclaration
+      JAVADOC: null
+      MODIFIERS (1)
+       Modifier
+        KEYWORD: 'private'
+      TYPE
+       PrimitiveType
+        PRIMITIVE_TYPE_CODE: 'double'
+      FRAGMENTS (1)
+       VariableDeclarationFragment
+        NAME
+         SimpleName
+          IDENTIFIER: 'weight'
+        EXTRA_DIMENSIONS: '0'
+        INITIALIZER: null
+      MethodDeclaration
+       JAVADOC: null
+       MODIFIERS (1)
+        Modifier
+         KEYWORD: 'public'
+       CONSTRUCTOR: 'true'
+       TYPE_PARAMETERS (0)
+       RETURN_TYPE2: null
+       NAME
+        SimpleName
+         IDENTIFIER: 'ClassMethod'
+       PARAMETERS (3)
+        SingleVariableDeclaration
+         MODIFIERS (0)
+         TYPE
+          SimpleType
+           NAME
+            SimpleName
+             IDENTIFIER: 'String'
+         VARARGS: 'false'
+         NAME
+          SimpleName
+           IDENTIFIER: 'name'
+         EXTRA_DIMENSIONS: '0'
+         INITIALIZER: null
+         SingleVariableDeclaration
+          MODIFIERS (0)
+          TYPE
+           PrimitiveType
+            PRIMITIVE_TYPE_CODE: 'int'
+          VARARGS: 'false'
+          NAME
+           SimpleName
+            IDENTIFIER: 'color'
+          EXTRA_DIMENSIONS: '0'
+          INITIALIZER: null
+          SingleVariableDeclaration
+           MODIFIERS (0)
+           TYPE
+            PrimitiveType
+             PRIMITIVE_TYPE_CODE: 'double'
+           VARARGS: 'false'
+           NAME
+            SimpleName
+             IDENTIFIER: 'weight'
+           EXTRA_DIMENSIONS: '0'
+           INITIALIZER: null
+       EXTRA_DIMENSIONS: '0'
+       THROWN_EXCEPTIONS (0)
+       BODY
+        Block
+         STATEMENTS (3)
+          ExpressionStatement
+           EXPRESSION
+            Assignment
+             LEFT_HAND_SIDE
+              FieldAccess
+               EXPRESSION
+                ThisExpression
+                 QUALIFIER: null
+               NAME
+                SimpleName
+                 IDENTIFIER: 'name'
+             OPERATOR: '='
+             RIGHT_HAND_SIDE
+              SimpleName
+               IDENTIFIER: 'name'
+           ExpressionStatement
+            EXPRESSION
+             Assignment
+              LEFT_HAND_SIDE
+               FieldAccess
+                EXPRESSION
+                 ThisExpression
+                  QUALIFIER: null
+                NAME
+                 SimpleName
+                  IDENTIFIER: 'color'
+              OPERATOR: '='
+              RIGHT_HAND_SIDE
+               SimpleName
+                IDENTIFIER: 'color'
+            ExpressionStatement
+             EXPRESSION
+              Assignment
+               LEFT_HAND_SIDE
+                FieldAccess
+                 EXPRESSION
+                  ThisExpression
+                   QUALIFIER: null
+                 NAME
+                  SimpleName
+                   IDENTIFIER: 'weight'
+               OPERATOR: '='
+               RIGHT_HAND_SIDE
+                SimpleName
+                 IDENTIFIER: 'weight'
+       MethodDeclaration
+        JAVADOC: null
+        MODIFIERS (1)
+         Modifier
+          KEYWORD: 'public'
+        CONSTRUCTOR: 'true'
+        TYPE_PARAMETERS (0)
+        RETURN_TYPE2: null
+        NAME
+         SimpleName
+          IDENTIFIER: 'ClassMethod'
+        PARAMETERS (0)
+        EXTRA_DIMENSIONS: '0'
+        THROWN_EXCEPTIONS (0)
+        BODY
+         Block
+          STATEMENTS (3)
+           ExpressionStatement
+            EXPRESSION
+             Assignment
+              LEFT_HAND_SIDE
+               SimpleName
+                IDENTIFIER: 'name'
+              OPERATOR: '='
+              RIGHT_HAND_SIDE
+               NullLiteral
+            ExpressionStatement
+             EXPRESSION
+              Assignment
+               LEFT_HAND_SIDE
+                SimpleName
+                 IDENTIFIER: 'color'
+               OPERATOR: '='
+               RIGHT_HAND_SIDE
+                NumberLiteral
+                 TOKEN: '0'
+             ExpressionStatement
+              EXPRESSION
+               Assignment
+                LEFT_HAND_SIDE
+                 SimpleName
+                  IDENTIFIER: 'weight'
+                OPERATOR: '='
+                RIGHT_HAND_SIDE
+                 NumberLiteral
+                  TOKEN: '0.0'
+        MethodDeclaration
+         JAVADOC: null
+         MODIFIERS (1)
+          Modifier
+           KEYWORD: 'public'
+         CONSTRUCTOR: 'false'
+         TYPE_PARAMETERS (0)
+         RETURN_TYPE2
+          SimpleType
+           NAME
+            SimpleName
+             IDENTIFIER: 'String'
+         NAME
+          SimpleName
+           IDENTIFIER: 'getName'
+         PARAMETERS (0)
+         EXTRA_DIMENSIONS: '0'
+         THROWN_EXCEPTIONS (0)
+         BODY
+          Block
+           STATEMENTS (1)
+            ReturnStatement
+             EXPRESSION
+              SimpleName
+               IDENTIFIER: 'name'
+         MethodDeclaration
+          JAVADOC: null
+          MODIFIERS (1)
+           Modifier
+            KEYWORD: 'public'
+          CONSTRUCTOR: 'false'
+          TYPE_PARAMETERS (0)
+          RETURN_TYPE2
+           PrimitiveType
+            PRIMITIVE_TYPE_CODE: 'void'
+          NAME
+           SimpleName
+            IDENTIFIER: 'setName'
+          PARAMETERS (1)
+           SingleVariableDeclaration
+            MODIFIERS (0)
+            TYPE
+             SimpleType
+              NAME
+               SimpleName
+                IDENTIFIER: 'String'
+            VARARGS: 'false'
+            NAME
+             SimpleName
+              IDENTIFIER: 'name'
+            EXTRA_DIMENSIONS: '0'
+            INITIALIZER: null
+          EXTRA_DIMENSIONS: '0'
+          THROWN_EXCEPTIONS (0)
+          BODY
+           Block
+            STATEMENTS (1)
+             ExpressionStatement
+              EXPRESSION
+               Assignment
+                LEFT_HAND_SIDE
+                 FieldAccess
+                  EXPRESSION
+                   ThisExpression
+                    QUALIFIER: null
+                  NAME
+                   SimpleName
+                    IDENTIFIER: 'name'
+                OPERATOR: '='
+                RIGHT_HAND_SIDE
+                 SimpleName
+                  IDENTIFIER: 'name'
+          MethodDeclaration
+           JAVADOC: null
+           MODIFIERS (1)
+            Modifier
+             KEYWORD: 'public'
+           CONSTRUCTOR: 'false'
+           TYPE_PARAMETERS (0)
+           RETURN_TYPE2
+            PrimitiveType
+             PRIMITIVE_TYPE_CODE: 'int'
+           NAME
+            SimpleName
+             IDENTIFIER: 'getColor'
+           PARAMETERS (0)
+           EXTRA_DIMENSIONS: '0'
+           THROWN_EXCEPTIONS (0)
+           BODY
+            Block
+             STATEMENTS (1)
+              ReturnStatement
+               EXPRESSION
+                SimpleName
+                 IDENTIFIER: 'color'
+           MethodDeclaration
+            JAVADOC: null
+            MODIFIERS (1)
+             Modifier
+              KEYWORD: 'public'
+            CONSTRUCTOR: 'false'
+            TYPE_PARAMETERS (0)
+            RETURN_TYPE2
+             PrimitiveType
+              PRIMITIVE_TYPE_CODE: 'void'
+            NAME
+             SimpleName
+              IDENTIFIER: 'setColor'
+            PARAMETERS (1)
+             SingleVariableDeclaration
+              MODIFIERS (0)
+              TYPE
+               PrimitiveType
+                PRIMITIVE_TYPE_CODE: 'int'
+              VARARGS: 'false'
+              NAME
+               SimpleName
+                IDENTIFIER: 'color'
+              EXTRA_DIMENSIONS: '0'
+              INITIALIZER: null
+            EXTRA_DIMENSIONS: '0'
+            THROWN_EXCEPTIONS (0)
+            BODY
+             Block
+              STATEMENTS (1)
+               ExpressionStatement
+                EXPRESSION
+                 Assignment
+                  LEFT_HAND_SIDE
+                   FieldAccess
+                    EXPRESSION
+                     ThisExpression
+                      QUALIFIER: null
+                    NAME
+                     SimpleName
+                      IDENTIFIER: 'color'
+                  OPERATOR: '='
+                  RIGHT_HAND_SIDE
+                   SimpleName
+                    IDENTIFIER: 'color'
+            MethodDeclaration
+             JAVADOC: null
+             MODIFIERS (1)
+              Modifier
+               KEYWORD: 'public'
+             CONSTRUCTOR: 'false'
+             TYPE_PARAMETERS (0)
+             RETURN_TYPE2
+              PrimitiveType
+               PRIMITIVE_TYPE_CODE: 'double'
+             NAME
+              SimpleName
+               IDENTIFIER: 'getWeight'
+             PARAMETERS (0)
+             EXTRA_DIMENSIONS: '0'
+             THROWN_EXCEPTIONS (0)
+             BODY
+              Block
+               STATEMENTS (1)
+                ReturnStatement
+                 EXPRESSION
+                  SimpleName
+                   IDENTIFIER: 'weight'
+             MethodDeclaration
+              JAVADOC: null
+              MODIFIERS (1)
+               Modifier
+                KEYWORD: 'public'
+              CONSTRUCTOR: 'false'
+              TYPE_PARAMETERS (0)
+              RETURN_TYPE2
+               PrimitiveType
+                PRIMITIVE_TYPE_CODE: 'void'
+              NAME
+               SimpleName
+                IDENTIFIER: 'setWeight'
+              PARAMETERS (1)
+               SingleVariableDeclaration
+                MODIFIERS (0)
+                TYPE
+                 PrimitiveType
+                  PRIMITIVE_TYPE_CODE: 'double'
+                VARARGS: 'false'
+                NAME
+                 SimpleName
+                  IDENTIFIER: 'weight'
+                EXTRA_DIMENSIONS: '0'
+                INITIALIZER: null
+              EXTRA_DIMENSIONS: '0'
+              THROWN_EXCEPTIONS (0)
+              BODY
+               Block
+                STATEMENTS (1)
+                 ExpressionStatement
+                  EXPRESSION
+                   Assignment
+                    LEFT_HAND_SIDE
+                     FieldAccess
+                      EXPRESSION
+                       ThisExpression
+                        QUALIFIER: null
+                      NAME
+                       SimpleName
+                        IDENTIFIER: 'weight'
+                    OPERATOR: '='
+                    RIGHT_HAND_SIDE
+                     SimpleName
+                      IDENTIFIER: 'weight'

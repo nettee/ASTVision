@@ -1,0 +1,132 @@
+PACKAGE
+ PackageDeclaration
+  JAVADOC: null
+  ANNOTATIONS (0)
+  NAME
+   SimpleName
+    IDENTIFIER: 'testcase'
+IMPORTS (0)
+TYPES (1)
+ TypeDeclaration
+  JAVADOC: null
+  MODIFIERS (1)
+   Modifier
+    KEYWORD: 'public'
+  INTERFACE: 'false'
+  NAME
+   SimpleName
+    IDENTIFIER: 'ClassField'
+  TYPE_PARAMETERS (0)
+  SUPERCLASS_TYPE: null
+  SUPER_INTERFACE_TYPES (0)
+  BODY_DECLARATIONS (6)
+   FieldDeclaration
+    JAVADOC: null
+    MODIFIERS (1)
+     Modifier
+      KEYWORD: 'private'
+    TYPE
+     PrimitiveType
+      PRIMITIVE_TYPE_CODE: 'int'
+    FRAGMENTS (1)
+     VariableDeclarationFragment
+      NAME
+       SimpleName
+        IDENTIFIER: 'a'
+      EXTRA_DIMENSIONS: '0'
+      INITIALIZER: null
+    FieldDeclaration
+     JAVADOC: null
+     MODIFIERS (1)
+      Modifier
+       KEYWORD: 'private'
+     TYPE
+      PrimitiveType
+       PRIMITIVE_TYPE_CODE: 'double'
+     FRAGMENTS (1)
+      VariableDeclarationFragment
+       NAME
+        SimpleName
+         IDENTIFIER: 'b'
+       EXTRA_DIMENSIONS: '0'
+       INITIALIZER: null
+     FieldDeclaration
+      JAVADOC: null
+      MODIFIERS (1)
+       Modifier
+        KEYWORD: 'private'
+      TYPE
+       SimpleType
+        NAME
+         SimpleName
+          IDENTIFIER: 'String'
+      FRAGMENTS (1)
+       VariableDeclarationFragment
+        NAME
+         SimpleName
+          IDENTIFIER: 'c'
+        EXTRA_DIMENSIONS: '0'
+        INITIALIZER: null
+      FieldDeclaration
+       JAVADOC: null
+       MODIFIERS (3)
+        Modifier
+         KEYWORD: 'public'
+         Modifier
+          KEYWORD: 'static'
+          Modifier
+           KEYWORD: 'final'
+       TYPE
+        PrimitiveType
+         PRIMITIVE_TYPE_CODE: 'int'
+       FRAGMENTS (1)
+        VariableDeclarationFragment
+         NAME
+          SimpleName
+           IDENTIFIER: 'ZERO'
+         EXTRA_DIMENSIONS: '0'
+         INITIALIZER
+          NumberLiteral
+           TOKEN: '0'
+       FieldDeclaration
+        JAVADOC: null
+        MODIFIERS (3)
+         Modifier
+          KEYWORD: 'public'
+          Modifier
+           KEYWORD: 'static'
+           Modifier
+            KEYWORD: 'final'
+        TYPE
+         PrimitiveType
+          PRIMITIVE_TYPE_CODE: 'int'
+        FRAGMENTS (1)
+         VariableDeclarationFragment
+          NAME
+           SimpleName
+            IDENTIFIER: 'ONE'
+          EXTRA_DIMENSIONS: '0'
+          INITIALIZER
+           NumberLiteral
+            TOKEN: '1'
+        FieldDeclaration
+         JAVADOC: null
+         MODIFIERS (3)
+          Modifier
+           KEYWORD: 'public'
+           Modifier
+            KEYWORD: 'static'
+            Modifier
+             KEYWORD: 'final'
+         TYPE
+          PrimitiveType
+           PRIMITIVE_TYPE_CODE: 'int'
+         FRAGMENTS (1)
+          VariableDeclarationFragment
+           NAME
+            SimpleName
+             IDENTIFIER: 'TWO'
+           EXTRA_DIMENSIONS: '0'
+           INITIALIZER
+            NumberLiteral
+             TOKEN: '2'

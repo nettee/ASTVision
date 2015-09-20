@@ -1,0 +1,100 @@
+PACKAGE
+ PackageDeclaration
+  JAVADOC: null
+  ANNOTATIONS (0)
+  NAME
+   SimpleName
+    IDENTIFIER: 'testcase'
+IMPORTS (0)
+TYPES (1)
+ TypeDeclaration
+  JAVADOC: null
+  MODIFIERS (1)
+   Modifier
+    KEYWORD: 'public'
+  INTERFACE: 'false'
+  NAME
+   SimpleName
+    IDENTIFIER: 'Recursion'
+  TYPE_PARAMETERS (0)
+  SUPERCLASS_TYPE: null
+  SUPER_INTERFACE_TYPES (0)
+  BODY_DECLARATIONS (1)
+   MethodDeclaration
+    JAVADOC: null
+    MODIFIERS (2)
+     Modifier
+      KEYWORD: 'public'
+      Modifier
+       KEYWORD: 'static'
+    CONSTRUCTOR: 'false'
+    TYPE_PARAMETERS (0)
+    RETURN_TYPE2
+     PrimitiveType
+      PRIMITIVE_TYPE_CODE: 'long'
+    NAME
+     SimpleName
+      IDENTIFIER: 'factorial'
+    PARAMETERS (1)
+     SingleVariableDeclaration
+      MODIFIERS (0)
+      TYPE
+       PrimitiveType
+        PRIMITIVE_TYPE_CODE: 'int'
+      VARARGS: 'false'
+      NAME
+       SimpleName
+        IDENTIFIER: 'n'
+      EXTRA_DIMENSIONS: '0'
+      INITIALIZER: null
+    EXTRA_DIMENSIONS: '0'
+    THROWN_EXCEPTIONS (0)
+    BODY
+     Block
+      STATEMENTS (1)
+       IfStatement
+        EXPRESSION
+         InfixExpression
+          LEFT_OPERAND
+           SimpleName
+            IDENTIFIER: 'n'
+          OPERATOR: '=='
+          RIGHT_OPERAND
+           NumberLiteral
+            TOKEN: '0'
+          EXTENDED_OPERANDS (0)
+        THEN_STATEMENT
+         Block
+          STATEMENTS (1)
+           ReturnStatement
+            EXPRESSION
+             NumberLiteral
+              TOKEN: '1'
+        ELSE_STATEMENT
+         Block
+          STATEMENTS (1)
+           ReturnStatement
+            EXPRESSION
+             InfixExpression
+              LEFT_OPERAND
+               SimpleName
+                IDENTIFIER: 'n'
+              OPERATOR: '*'
+              RIGHT_OPERAND
+               MethodInvocation
+                EXPRESSION: null
+                TYPE_ARGUMENTS (0)
+                NAME
+                 SimpleName
+                  IDENTIFIER: 'factorial'
+                ARGUMENTS (1)
+                 InfixExpression
+                  LEFT_OPERAND
+                   SimpleName
+                    IDENTIFIER: 'n'
+                  OPERATOR: '-'
+                  RIGHT_OPERAND
+                   NumberLiteral
+                    TOKEN: '1'
+                  EXTENDED_OPERANDS (0)
+              EXTENDED_OPERANDS (0)

@@ -1,0 +1,232 @@
+PACKAGE
+ PackageDeclaration
+  JAVADOC: null
+  ANNOTATIONS (0)
+  NAME
+   SimpleName
+    IDENTIFIER: 'testcase'
+IMPORTS (0)
+TYPES (1)
+ TypeDeclaration
+  JAVADOC: null
+  MODIFIERS (1)
+   Modifier
+    KEYWORD: 'public'
+  INTERFACE: 'false'
+  NAME
+   SimpleName
+    IDENTIFIER: 'Expression'
+  TYPE_PARAMETERS (0)
+  SUPERCLASS_TYPE: null
+  SUPER_INTERFACE_TYPES (0)
+  BODY_DECLARATIONS (1)
+   MethodDeclaration
+    JAVADOC: null
+    MODIFIERS (2)
+     Modifier
+      KEYWORD: 'public'
+      Modifier
+       KEYWORD: 'static'
+    CONSTRUCTOR: 'false'
+    TYPE_PARAMETERS (0)
+    RETURN_TYPE2
+     PrimitiveType
+      PRIMITIVE_TYPE_CODE: 'void'
+    NAME
+     SimpleName
+      IDENTIFIER: 'main'
+    PARAMETERS (1)
+     SingleVariableDeclaration
+      MODIFIERS (0)
+      TYPE
+       ArrayType
+        COMPONENT_TYPE
+         SimpleType
+          NAME
+           SimpleName
+            IDENTIFIER: 'String'
+      VARARGS: 'false'
+      NAME
+       SimpleName
+        IDENTIFIER: 'args'
+      EXTRA_DIMENSIONS: '0'
+      INITIALIZER: null
+    EXTRA_DIMENSIONS: '0'
+    THROWN_EXCEPTIONS (0)
+    BODY
+     Block
+      STATEMENTS (6)
+       VariableDeclarationStatement
+        MODIFIERS (0)
+        TYPE
+         PrimitiveType
+          PRIMITIVE_TYPE_CODE: 'int'
+        FRAGMENTS (1)
+         VariableDeclarationFragment
+          NAME
+           SimpleName
+            IDENTIFIER: 'a'
+          EXTRA_DIMENSIONS: '0'
+          INITIALIZER
+           InfixExpression
+            LEFT_OPERAND
+             NumberLiteral
+              TOKEN: '1'
+            OPERATOR: '+'
+            RIGHT_OPERAND
+             NumberLiteral
+              TOKEN: '1'
+            EXTENDED_OPERANDS (0)
+        VariableDeclarationStatement
+         MODIFIERS (0)
+         TYPE
+          PrimitiveType
+           PRIMITIVE_TYPE_CODE: 'double'
+         FRAGMENTS (1)
+          VariableDeclarationFragment
+           NAME
+            SimpleName
+             IDENTIFIER: 'b'
+           EXTRA_DIMENSIONS: '0'
+           INITIALIZER
+            InfixExpression
+             LEFT_OPERAND
+              NumberLiteral
+               TOKEN: '2.0'
+             OPERATOR: '*'
+             RIGHT_OPERAND
+              NumberLiteral
+               TOKEN: '3.2'
+             EXTENDED_OPERANDS (0)
+         VariableDeclarationStatement
+          MODIFIERS (0)
+          TYPE
+           PrimitiveType
+            PRIMITIVE_TYPE_CODE: 'int'
+          FRAGMENTS (1)
+           VariableDeclarationFragment
+            NAME
+             SimpleName
+              IDENTIFIER: 'c'
+            EXTRA_DIMENSIONS: '0'
+            INITIALIZER
+             InfixExpression
+              LEFT_OPERAND
+               ParenthesizedExpression
+                EXPRESSION
+                 InfixExpression
+                  LEFT_OPERAND
+                   NumberLiteral
+                    TOKEN: '20'
+                  OPERATOR: '>>'
+                  RIGHT_OPERAND
+                   NumberLiteral
+                    TOKEN: '4'
+                  EXTENDED_OPERANDS (0)
+              OPERATOR: '&'
+              RIGHT_OPERAND
+               NumberLiteral
+                TOKEN: '3'
+              EXTENDED_OPERANDS (0)
+          VariableDeclarationStatement
+           MODIFIERS (0)
+           TYPE
+            PrimitiveType
+             PRIMITIVE_TYPE_CODE: 'int'
+           FRAGMENTS (1)
+            VariableDeclarationFragment
+             NAME
+              SimpleName
+               IDENTIFIER: 'd'
+             EXTRA_DIMENSIONS: '0'
+             INITIALIZER
+              PrefixExpression
+               OPERATOR: '~'
+               OPERAND
+                NumberLiteral
+                 TOKEN: '1'
+           VariableDeclarationStatement
+            MODIFIERS (0)
+            TYPE
+             PrimitiveType
+              PRIMITIVE_TYPE_CODE: 'boolean'
+            FRAGMENTS (1)
+             VariableDeclarationFragment
+              NAME
+               SimpleName
+                IDENTIFIER: 'e'
+              EXTRA_DIMENSIONS: '0'
+              INITIALIZER
+               InfixExpression
+                LEFT_OPERAND
+                 ParenthesizedExpression
+                  EXPRESSION
+                   InfixExpression
+                    LEFT_OPERAND
+                     SimpleName
+                      IDENTIFIER: 'a'
+                    OPERATOR: '>'
+                    RIGHT_OPERAND
+                     NumberLiteral
+                      TOKEN: '1'
+                    EXTENDED_OPERANDS (0)
+                OPERATOR: '||'
+                RIGHT_OPERAND
+                 ParenthesizedExpression
+                  EXPRESSION
+                   InfixExpression
+                    LEFT_OPERAND
+                     SimpleName
+                      IDENTIFIER: 'b'
+                    OPERATOR: '<'
+                    RIGHT_OPERAND
+                     NumberLiteral
+                      TOKEN: '2.0'
+                    EXTENDED_OPERANDS (0)
+                EXTENDED_OPERANDS (0)
+            VariableDeclarationStatement
+             MODIFIERS (0)
+             TYPE
+              PrimitiveType
+               PRIMITIVE_TYPE_CODE: 'int'
+             FRAGMENTS (1)
+              VariableDeclarationFragment
+               NAME
+                SimpleName
+                 IDENTIFIER: 'f'
+               EXTRA_DIMENSIONS: '0'
+               INITIALIZER
+                InfixExpression
+                 LEFT_OPERAND
+                  ParenthesizedExpression
+                   EXPRESSION
+                    InfixExpression
+                     LEFT_OPERAND
+                      NumberLiteral
+                       TOKEN: '1'
+                     OPERATOR: '+'
+                     RIGHT_OPERAND
+                      InfixExpression
+                       LEFT_OPERAND
+                        NumberLiteral
+                         TOKEN: '2'
+                       OPERATOR: '*'
+                       RIGHT_OPERAND
+                        NumberLiteral
+                         TOKEN: '3'
+                       EXTENDED_OPERANDS (0)
+                     EXTENDED_OPERANDS (0)
+                 OPERATOR: '-'
+                 RIGHT_OPERAND
+                  ParenthesizedExpression
+                   EXPRESSION
+                    InfixExpression
+                     LEFT_OPERAND
+                      NumberLiteral
+                       TOKEN: '6'
+                     OPERATOR: '/'
+                     RIGHT_OPERAND
+                      NumberLiteral
+                       TOKEN: '5'
+                     EXTENDED_OPERANDS (0)
+                 EXTENDED_OPERANDS (0)

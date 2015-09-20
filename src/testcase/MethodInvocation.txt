@@ -1,0 +1,330 @@
+PACKAGE
+ PackageDeclaration
+  JAVADOC: null
+  ANNOTATIONS (0)
+  NAME
+   SimpleName
+    IDENTIFIER: 'testcase'
+IMPORTS (0)
+TYPES (1)
+ TypeDeclaration
+  JAVADOC: null
+  MODIFIERS (1)
+   Modifier
+    KEYWORD: 'public'
+  INTERFACE: 'false'
+  NAME
+   SimpleName
+    IDENTIFIER: 'MethodInvocation'
+  TYPE_PARAMETERS (0)
+  SUPERCLASS_TYPE: null
+  SUPER_INTERFACE_TYPES (0)
+  BODY_DECLARATIONS (5)
+   MethodDeclaration
+    JAVADOC: null
+    MODIFIERS (2)
+     Modifier
+      KEYWORD: 'public'
+      Modifier
+       KEYWORD: 'static'
+    CONSTRUCTOR: 'false'
+    TYPE_PARAMETERS (0)
+    RETURN_TYPE2
+     PrimitiveType
+      PRIMITIVE_TYPE_CODE: 'int'
+    NAME
+     SimpleName
+      IDENTIFIER: 'alice'
+    PARAMETERS (1)
+     SingleVariableDeclaration
+      MODIFIERS (0)
+      TYPE
+       PrimitiveType
+        PRIMITIVE_TYPE_CODE: 'int'
+      VARARGS: 'false'
+      NAME
+       SimpleName
+        IDENTIFIER: 'a'
+      EXTRA_DIMENSIONS: '0'
+      INITIALIZER: null
+    EXTRA_DIMENSIONS: '0'
+    THROWN_EXCEPTIONS (0)
+    BODY
+     Block
+      STATEMENTS (1)
+       ReturnStatement
+        EXPRESSION
+         InfixExpression
+          LEFT_OPERAND
+           SimpleName
+            IDENTIFIER: 'a'
+          OPERATOR: '+'
+          RIGHT_OPERAND
+           NumberLiteral
+            TOKEN: '1'
+          EXTENDED_OPERANDS (0)
+    MethodDeclaration
+     JAVADOC: null
+     MODIFIERS (2)
+      Modifier
+       KEYWORD: 'public'
+       Modifier
+        KEYWORD: 'static'
+     CONSTRUCTOR: 'false'
+     TYPE_PARAMETERS (0)
+     RETURN_TYPE2
+      PrimitiveType
+       PRIMITIVE_TYPE_CODE: 'int'
+     NAME
+      SimpleName
+       IDENTIFIER: 'bob'
+     PARAMETERS (1)
+      SingleVariableDeclaration
+       MODIFIERS (0)
+       TYPE
+        PrimitiveType
+         PRIMITIVE_TYPE_CODE: 'int'
+       VARARGS: 'false'
+       NAME
+        SimpleName
+         IDENTIFIER: 'a'
+       EXTRA_DIMENSIONS: '0'
+       INITIALIZER: null
+     EXTRA_DIMENSIONS: '0'
+     THROWN_EXCEPTIONS (0)
+     BODY
+      Block
+       STATEMENTS (1)
+        ReturnStatement
+         EXPRESSION
+          InfixExpression
+           LEFT_OPERAND
+            SimpleName
+             IDENTIFIER: 'a'
+           OPERATOR: '+'
+           RIGHT_OPERAND
+            NumberLiteral
+             TOKEN: '2'
+           EXTENDED_OPERANDS (0)
+     MethodDeclaration
+      JAVADOC: null
+      MODIFIERS (2)
+       Modifier
+        KEYWORD: 'public'
+        Modifier
+         KEYWORD: 'static'
+      CONSTRUCTOR: 'false'
+      TYPE_PARAMETERS (0)
+      RETURN_TYPE2
+       PrimitiveType
+        PRIMITIVE_TYPE_CODE: 'int'
+      NAME
+       SimpleName
+        IDENTIFIER: 'claire'
+      PARAMETERS (1)
+       SingleVariableDeclaration
+        MODIFIERS (0)
+        TYPE
+         PrimitiveType
+          PRIMITIVE_TYPE_CODE: 'int'
+        VARARGS: 'false'
+        NAME
+         SimpleName
+          IDENTIFIER: 'a'
+        EXTRA_DIMENSIONS: '0'
+        INITIALIZER: null
+      EXTRA_DIMENSIONS: '0'
+      THROWN_EXCEPTIONS (0)
+      BODY
+       Block
+        STATEMENTS (1)
+         ReturnStatement
+          EXPRESSION
+           InfixExpression
+            LEFT_OPERAND
+             SimpleName
+              IDENTIFIER: 'a'
+            OPERATOR: '+'
+            RIGHT_OPERAND
+             NumberLiteral
+              TOKEN: '3'
+            EXTENDED_OPERANDS (0)
+      MethodDeclaration
+       JAVADOC: null
+       MODIFIERS (2)
+        Modifier
+         KEYWORD: 'public'
+         Modifier
+          KEYWORD: 'static'
+       CONSTRUCTOR: 'false'
+       TYPE_PARAMETERS (0)
+       RETURN_TYPE2
+        PrimitiveType
+         PRIMITIVE_TYPE_CODE: 'int'
+       NAME
+        SimpleName
+         IDENTIFIER: 'david'
+       PARAMETERS (1)
+        SingleVariableDeclaration
+         MODIFIERS (0)
+         TYPE
+          PrimitiveType
+           PRIMITIVE_TYPE_CODE: 'int'
+         VARARGS: 'false'
+         NAME
+          SimpleName
+           IDENTIFIER: 'a'
+         EXTRA_DIMENSIONS: '0'
+         INITIALIZER: null
+       EXTRA_DIMENSIONS: '0'
+       THROWN_EXCEPTIONS (0)
+       BODY
+        Block
+         STATEMENTS (1)
+          ReturnStatement
+           EXPRESSION
+            InfixExpression
+             LEFT_OPERAND
+              SimpleName
+               IDENTIFIER: 'a'
+             OPERATOR: '+'
+             RIGHT_OPERAND
+              NumberLiteral
+               TOKEN: '4'
+             EXTENDED_OPERANDS (0)
+       MethodDeclaration
+        JAVADOC: null
+        MODIFIERS (2)
+         Modifier
+          KEYWORD: 'public'
+          Modifier
+           KEYWORD: 'static'
+        CONSTRUCTOR: 'false'
+        TYPE_PARAMETERS (0)
+        RETURN_TYPE2
+         PrimitiveType
+          PRIMITIVE_TYPE_CODE: 'void'
+        NAME
+         SimpleName
+          IDENTIFIER: 'main'
+        PARAMETERS (1)
+         SingleVariableDeclaration
+          MODIFIERS (0)
+          TYPE
+           ArrayType
+            COMPONENT_TYPE
+             SimpleType
+              NAME
+               SimpleName
+                IDENTIFIER: 'String'
+          VARARGS: 'false'
+          NAME
+           SimpleName
+            IDENTIFIER: 'args'
+          EXTRA_DIMENSIONS: '0'
+          INITIALIZER: null
+        EXTRA_DIMENSIONS: '0'
+        THROWN_EXCEPTIONS (0)
+        BODY
+         Block
+          STATEMENTS (6)
+           VariableDeclarationStatement
+            MODIFIERS (0)
+            TYPE
+             PrimitiveType
+              PRIMITIVE_TYPE_CODE: 'int'
+            FRAGMENTS (1)
+             VariableDeclarationFragment
+              NAME
+               SimpleName
+                IDENTIFIER: 'a'
+              EXTRA_DIMENSIONS: '0'
+              INITIALIZER
+               NumberLiteral
+                TOKEN: '0'
+            ExpressionStatement
+             EXPRESSION
+              Assignment
+               LEFT_HAND_SIDE
+                SimpleName
+                 IDENTIFIER: 'a'
+               OPERATOR: '='
+               RIGHT_HAND_SIDE
+                MethodInvocation
+                 EXPRESSION: null
+                 TYPE_ARGUMENTS (0)
+                 NAME
+                  SimpleName
+                   IDENTIFIER: 'alice'
+                 ARGUMENTS (1)
+                  SimpleName
+                   IDENTIFIER: 'a'
+             ExpressionStatement
+              EXPRESSION
+               Assignment
+                LEFT_HAND_SIDE
+                 SimpleName
+                  IDENTIFIER: 'a'
+                OPERATOR: '='
+                RIGHT_HAND_SIDE
+                 MethodInvocation
+                  EXPRESSION: null
+                  TYPE_ARGUMENTS (0)
+                  NAME
+                   SimpleName
+                    IDENTIFIER: 'bob'
+                  ARGUMENTS (1)
+                   SimpleName
+                    IDENTIFIER: 'a'
+              ExpressionStatement
+               EXPRESSION
+                Assignment
+                 LEFT_HAND_SIDE
+                  SimpleName
+                   IDENTIFIER: 'a'
+                 OPERATOR: '='
+                 RIGHT_HAND_SIDE
+                  MethodInvocation
+                   EXPRESSION: null
+                   TYPE_ARGUMENTS (0)
+                   NAME
+                    SimpleName
+                     IDENTIFIER: 'claire'
+                   ARGUMENTS (1)
+                    SimpleName
+                     IDENTIFIER: 'a'
+               ExpressionStatement
+                EXPRESSION
+                 Assignment
+                  LEFT_HAND_SIDE
+                   SimpleName
+                    IDENTIFIER: 'a'
+                  OPERATOR: '='
+                  RIGHT_HAND_SIDE
+                   MethodInvocation
+                    EXPRESSION: null
+                    TYPE_ARGUMENTS (0)
+                    NAME
+                     SimpleName
+                      IDENTIFIER: 'david'
+                    ARGUMENTS (1)
+                     SimpleName
+                      IDENTIFIER: 'a'
+                ExpressionStatement
+                 EXPRESSION
+                  MethodInvocation
+                   EXPRESSION
+                    QualifiedName
+                     QUALIFIER
+                      SimpleName
+                       IDENTIFIER: 'System'
+                     NAME
+                      SimpleName
+                       IDENTIFIER: 'out'
+                   TYPE_ARGUMENTS (0)
+                   NAME
+                    SimpleName
+                     IDENTIFIER: 'println'
+                   ARGUMENTS (1)
+                    SimpleName
+                     IDENTIFIER: 'a'

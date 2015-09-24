@@ -6,3 +6,5 @@
 2nd step:run astview as java application,maybe you need to change the classpath;
 
 3rd step:the astview will be saved in src/testcase as [testcase_name].txt.
+
+.jar:http://pan.baidu.com/s/1sj7l4ZV

@@ -1,4 +1,4 @@
-package astview;
+package run;
 
 import java.io.BufferedInputStream;
 import java.io.File;
@@ -12,6 +12,8 @@ import java.util.List;
 import org.eclipse.jdt.core.dom.AST;
 import org.eclipse.jdt.core.dom.ASTParser;
 import org.eclipse.jdt.core.dom.CompilationUnit;
+
+import astview.ASTViewContentProvider;
 
 public class Driver {
 	public static String PATH;
@@ -52,7 +54,7 @@ public class Driver {
 			System.out.println(PATH);
 			CompilationUnit result = getCompilationUnit(PATH);
 			ASTViewContentProvider view = new ASTViewContentProvider();
-			ASTViewContentProvider.isPrint=false;
+			ASTViewContentProvider.printed=false;
 			view.getChildren(result);
 		}
 	}

@@ -50,9 +50,11 @@ import org.eclipse.jdt.core.dom.Type;
 import org.eclipse.jdt.core.dom.TypeParameter;
 import org.eclipse.jdt.core.dom.VariableDeclaration;
 
+import run.Driver;
+
 public class ASTViewContentProvider {
 
-	public static boolean isPrint = false;
+	public static boolean printed = false;  // indicate whether the astview is printed
 
 	public Object[] getElements(Object parent) {
 		return getChildren(parent);
@@ -76,8 +78,10 @@ public class ASTViewContentProvider {
 		if (parent instanceof ASTAttribute) {
 			return ((ASTAttribute) parent).getChildren();
 		} else if (parent instanceof ASTNode) {
-			// Here add the test code for a queue
-			if (isPrint == false) {
+			
+			// print only when the AST is first visited
+			if (printed == false) {
+				
 				String[] out = Driver.PATH.split("\\.");
 				File file = new File(out[out.length-2] + ".txt");
 				PrintWriter output = null;
@@ -101,17 +105,25 @@ public class ASTViewContentProvider {
 				}
 
 				output.close();
-				isPrint = true;
+				printed = true;
 
 				// Test end
-				return getNodeChildren((ASTNode) parent);
-			} else
-				return getNodeChildren((ASTNode) parent);
+			}
+			
+			return getNodeChildren((ASTNode) parent);
 		}
+		
 		return new Object[0];
 	}
 
-	// This is also the test code
+	/**
+	 * recursively display all astview on AST
+	 * @param node the <code>NodeProperty</code> instance
+	 * @param level indent level
+	 * @param file
+	 * @param output 
+	 * @throws FileNotFoundException
+	 */
 	public void dfsDisplayProperty(NodeProperty node, int level, File file,
 			PrintWriter output) throws FileNotFoundException {
 		for (int i = 0; i < level; i++) {
